@@ -49,6 +49,9 @@
        <layout class="QGridLayout" name="gridLayout_4">
         <item row="0" column="0">
          <widget class="QCheckBox" name="testCheckBox">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -63,6 +66,9 @@
             <bold>false</bold>
            </font>
           </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
           <property name="styleSheet">
            <string notr="true">background-color: rgb(255, 255, 255);
 border-color: rgb(0, 0, 0);
@@ -73,6 +79,9 @@ border-width : 1px 1px 1px 1px;
           </property>
           <property name="text">
            <string>AS_ROOM_TYPES_20220317_9c4a3e2b-231d-48a0-9239-74ce32536b7a.XML</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -498,7 +507,7 @@ border-width : 1px 1px 1px 1px;
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="logos.qrc"/>
+  <include location="../GARUPDATE/logos.qrc"/>
  </resources>
  <connections/>
 </ui>

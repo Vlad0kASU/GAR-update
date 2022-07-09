@@ -1684,6 +1684,22 @@ class mybutton(tk.Button):
         self.frame_list = frame_list
         self["command"] = self.dir_click
 
+#
+        self.notChoisedDirButton
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(12)
+        self.notChoisedDirButton.setFont(font)
+        self.notChoisedDirButton.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-color: rgb(0, 0, 0);\n"
+"border : solid black;\n"
+"border-width : 2px 2px 2px 2px;\n"
+"\n"
+"")
+        self.notChoisedDirButton.setObjectName("notChoisedDirButton")
+        self.verticalLayout.addWidget(self.notChoisedDirButton)
+#
+
 for i in dirs:
     backslash = "\\"
     i = f"{i[i.rfind(backslash)+1:]}"

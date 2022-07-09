@@ -34,38 +34,7 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.gridLayout_4 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_2)
         self.gridLayout_4.setObjectName("gridLayout_4")
-        self.testCheckBox = QtWidgets.QCheckBox(self.scrollAreaWidgetContents_2)
-        self.testCheckBox.setMinimumSize(QtCore.QSize(0, 30))
-        font = QtGui.QFont()
-        font.setFamily("Times New Roman")
-        font.setPointSize(16)
-        font.setBold(False)
-        font.setWeight(50)
-        self.testCheckBox.setFont(font)
-        self.testCheckBox.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-"border-color: rgb(0, 0, 0);\n"
-"border : solid black;\n"
-"border-width : 1px 1px 1px 1px;\n"
-"\n"
-"")
-        self.testCheckBox.setObjectName("testCheckBox")
-        self.gridLayout_4.addWidget(self.testCheckBox, 0, 0, 1, 1)
-        self.label_2 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
-        self.label_2.setMinimumSize(QtCore.QSize(100, 0))
-        self.label_2.setMaximumSize(QtCore.QSize(100, 16777215))
-        font = QtGui.QFont()
-        font.setFamily("Times New Roman")
-        font.setPointSize(14)
-        self.label_2.setFont(font)
-        self.label_2.setStyleSheet("color: rgb(0, 181, 45);\n"
-"background-color: rgb(255, 255, 255);\n"
-"border-color: rgb(0, 0, 0);\n"
-"border : solid black;\n"
-"border-width : 1px 1px 1px 1px;\n"
-"\n"
-"")
-        self.label_2.setObjectName("label_2")
-        self.gridLayout_4.addWidget(self.label_2, 0, 1, 1, 1)
+
         self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
         self.gridLayout_2.addWidget(self.scrollArea_2, 1, 1, 1, 1)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
@@ -137,35 +106,6 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.choisedDirButton = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.choisedDirButton.setMinimumSize(QtCore.QSize(100, 30))
-        font = QtGui.QFont()
-        font.setFamily("Times New Roman")
-        font.setPointSize(12)
-        self.choisedDirButton.setFont(font)
-        self.choisedDirButton.setStyleSheet("background-color: rgb(0, 77, 230);\n"
-"color: rgb(255, 255, 255);\n"
-"border-color: rgb(0, 0, 0);\n"
-"border : solid black;\n"
-"border-width : 2px 2px 2px 2px;\n"
-"\n"
-"")
-        self.choisedDirButton.setObjectName("choisedDirButton")
-        self.verticalLayout.addWidget(self.choisedDirButton)
-        self.notChoisedDirButton = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
-        self.notChoisedDirButton.setMinimumSize(QtCore.QSize(100, 30))
-        font = QtGui.QFont()
-        font.setFamily("Times New Roman")
-        font.setPointSize(12)
-        self.notChoisedDirButton.setFont(font)
-        self.notChoisedDirButton.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-"border-color: rgb(0, 0, 0);\n"
-"border : solid black;\n"
-"border-width : 2px 2px 2px 2px;\n"
-"\n"
-"")
-        self.notChoisedDirButton.setObjectName("notChoisedDirButton")
-        self.verticalLayout.addWidget(self.notChoisedDirButton)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.gridLayout_2.addWidget(self.scrollArea, 1, 0, 1, 1)
         self.label = QtWidgets.QLabel(self.centralwidget)
@@ -253,19 +193,14 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Парсер ФИАС"))
-        self.testCheckBox.setText(_translate("MainWindow", "AS_ROOM_TYPES_20220317_9c4a3e2b-231d-48a0-9239-74ce32536b7a.XML"))
-        self.label_2.setText(_translate("MainWindow", "12500|12500"))
         self.allButton.setText(_translate("MainWindow", "ALL"))
         self.xmlButton.setText(_translate("MainWindow", "XML"))
         self.csvButton.setText(_translate("MainWindow", "CSV"))
-        self.choisedDirButton.setText(_translate("MainWindow", "PushButton"))
-        self.notChoisedDirButton.setText(_translate("MainWindow", "PushButton"))
         self.label.setText(_translate("MainWindow", "Список директорий"))
         self.convertCsvChoisedButton.setText(_translate("MainWindow", "Конвертировать в CSV выбранное"))
         self.convertCsvAllButton.setText(_translate("MainWindow", "Конвертировать в CSV все"))
         self.loadBdAllButton.setText(_translate("MainWindow", "Загрузить в БД все"))
         self.loadBdChoisedButton.setText(_translate("MainWindow", "Загрузить в БД выбранное"))
-
 
 
 if __name__ == "__main__":
